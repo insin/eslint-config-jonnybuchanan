@@ -34,4 +34,9 @@ var command =
     .concat(process.argv.slice(2))
     .join(' ')
 
-execSync(command, {stdio: [0, 1, 2]})
+try {
+  execSync(command, {stdio: [0, 1, 2]})
+}
+catch (e) {
+  process.exit(1)
+}
