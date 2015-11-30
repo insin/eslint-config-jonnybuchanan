@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "Jonny Buchanan <jonathan.buchanan@gmail.com>",
   "bin": {
-    "lint": "bin/lint.js"
+    "eslint": "bin/lint.js"
   },
   "files": [
     "bin",
