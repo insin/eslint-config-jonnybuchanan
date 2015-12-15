@@ -7,6 +7,9 @@
   "bin": {
     "eslint": "bin/lint.js"
   },
+  "scripts": {
+    "test": "eslint test"
+  },
   "files": [
     "bin",
     ".eslintrc"
