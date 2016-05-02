@@ -6,7 +6,6 @@
     "jsx-quotes": [2, "prefer-double"],
     "react/prop-types": 0,
     "react/self-closing-comp": 0,
-    "react/wrap-multilines": 0,
     "space-before-function-paren": 0
   },
   "parser": "babel-eslint"

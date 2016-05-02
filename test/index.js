@@ -1,9 +1,9 @@
-// This file should pass linting based on the tweaks made to the standard and
-// standard-react presets.
+// This file should pass linting based on the tweaks made to the standard,
+// standard-jsx and standard-react presets.
 import React from 'react'
 
 // Allow == for typeof, which always returns a string
-// Stroustrup brace style - else/catch etc. on a new line
+// Require Stroustrup brace style - else/catch etc. on a new line
 if (typeof global == 'object') {
   console.log('global')
 }
