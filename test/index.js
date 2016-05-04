@@ -33,6 +33,9 @@ let TestComponent = React.createClass({
       {/* Self-closing of components without children is not enforced */}
       <OtherComponent></OtherComponent>
       {`${space()} ${noSpace()}`}
+      {/* Spacing before self-closing is not enforced */}
+      <OtherComponent test/>
+      <OtherComponent test />
     </div>
   }
 })
