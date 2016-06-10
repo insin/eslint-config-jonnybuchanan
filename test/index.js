@@ -22,6 +22,19 @@ function noSpace() {
   return 'no space!'
 }
 
+// Dangling commas are allowed on multiline literals
+let object = {
+  a: 1,
+  b: 2,
+  c: 3,
+}
+let array = [
+  1,
+  2,
+  3,
+]
+console.log(object, array)
+
 let OtherComponent = () => <h2>Test</h2>
 
 let TestComponent = React.createClass({
