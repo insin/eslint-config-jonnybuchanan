@@ -2,6 +2,7 @@
   "extends": ["standard", "standard-react"],
   "rules": {
     "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
+    "comma-dangle": [2, "only-multiline"],
     "eqeqeq": [2, "smart"],
     "jsx-quotes": [2, "prefer-double"],
     "react/prop-types": 0,
