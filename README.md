@@ -12,5 +12,5 @@ Installing an `eslint` command means tools which look for `node_modules/.bin/esl
 [build-badge]: https://img.shields.io/travis/insin/eslint-config-jonnybuchanan/master.png?style=flat-square
 [build]: https://travis-ci.org/insin/eslint-config-jonnybuchanan
 
-[npm-badge]: https://img.shields.io/npm/v/eslint-config-jonnybuchanan.png
+[npm-badge]: https://img.shields.io/npm/v/eslint-config-jonnybuchanan.png?style=flat-square
 [npm]: https://www.npmjs.org/package/eslint-config-jonnybuchanan
