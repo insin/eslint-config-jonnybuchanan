@@ -37,6 +37,12 @@ console.log(object, array)
 
 let OtherComponent = () => <h2>Test</h2>
 
+async function fetchStories(subreddit) { // eslint-disable-line no-unused-vars
+  var req = await window.fetch(`https://www.reddit.com/r/${subreddit}.json`, {mode: 'cors'})
+  var json = await req.json()
+  return json
+}
+
 let TestComponent = React.createClass({
   render() {
     // Multiline JSX statements don't need wrapping parens
