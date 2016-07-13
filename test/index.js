@@ -43,6 +43,17 @@ async function fetchStories(subreddit) { // eslint-disable-line no-unused-vars
   return json
 }
 
+// Spaces around generator function stars are not enforced either way
+function* generator1() { // eslint-disable-line no-unused-vars
+  yield '1'
+}
+function * generator2() { // eslint-disable-line no-unused-vars
+  yield '2'
+}
+function *generator3() { // eslint-disable-line no-unused-vars
+  yield '3'
+}
+
 let TestComponent = React.createClass({
   render() {
     // Multiline JSX statements don't need wrapping parens
