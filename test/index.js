@@ -12,7 +12,7 @@ else if (typeof window == 'object') {
 }
 
 // Braces can be on same line
-if (typeof window.__DATA__) { console.log('data') }
+if (window.__DATA__) { console.log('data') }
 
 // A space after function name convention is not enforced either way
 function space () {
