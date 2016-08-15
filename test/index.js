@@ -57,7 +57,7 @@ function *generator3() { // eslint-disable-line no-unused-vars
 let TestComponent = React.createClass({
   render() {
     // Multiline JSX statements don't need wrapping parens
-    return <div className="test">
+    return <div className="test" onClick={() => { console.log('click') }}>
       {/* Declaration of propTypes is not enforced */}
       <h1>Test {this.props.name}</h1>
       {/* Self-closing of components without children is not enforced */}
