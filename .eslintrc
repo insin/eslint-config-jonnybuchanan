@@ -1,15 +1,16 @@
 {
-  "extends": ["standard", "standard-jsx", "standard-react"],
+  "extends": ["standard", "standard-react"],
+  "parser": "babel-eslint",
   "rules": {
     "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
     "comma-dangle": [2, "only-multiline"],
     "eqeqeq": [2, "smart"],
     "generator-star-spacing": 0,
+    "jsx-quotes": [2, "prefer-double"],
     "react/prop-types": 0,
     "react/self-closing-comp": 0,
     "react/jsx-no-bind": 0,
     "react/jsx-space-before-closing": 0,
     "space-before-function-paren": 0
   },
-  "parser": "babel-eslint"
 }
