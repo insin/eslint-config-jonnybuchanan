@@ -11,6 +11,7 @@
     "react/self-closing-comp": 0,
     "react/jsx-no-bind": 0,
     "react/jsx-space-before-closing": 0,
+    "react/no-unescaped-entities": [2, {forbid: [">", "}"]}],
     "space-before-function-paren": 0
   }
 }

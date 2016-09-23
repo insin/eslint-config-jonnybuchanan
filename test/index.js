@@ -67,6 +67,7 @@ let TestComponent = React.createClass({
       {/* Spacing before self-closing is not enforced */}
       <OtherComponent test/>
       <OtherComponent test />
+      Unescaped "quotes" 'are' allowed {/* but unescaped > and } aren't */}
     </div>
   }
 })
