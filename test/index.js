@@ -72,4 +72,16 @@ let TestComponent = React.createClass({
   }
 })
 
-export default TestComponent
+class AnotherComponent extends React.Component {
+  classProperty = true
+
+  boundMethodViaClassProperty = (e) => {
+    e.byGum()
+  }
+
+  render() {
+    return <TestComponent/>
+  }
+}
+
+export default AnotherComponent
