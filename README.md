@@ -3,7 +3,7 @@
 
 A personal ESLint config, but with ESLint itself and all the necessary shareable config, plugins and parser as dependencies.
 
-Provides an `eslint` command which runs the real ESLint with this config's `.eslintrc` in the context of this module's dependencies, so it will be able to find the plugins and parser it depends on without having to manage these dependencies individially in every project.
+Provides an `eslint` command which runs the real ESLint with this config's `.eslintrc` in the context of this module's dependencies, so it will be able to find the plugins and parser it depends on without having to manage these dependencies individually in every project.
 
 Installing an `eslint` command means tools which look for `node_modules/.bin/eslint` will find and run what is effectively a preconfigured version.
 
