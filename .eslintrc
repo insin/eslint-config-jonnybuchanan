@@ -12,6 +12,7 @@
     "react/jsx-no-bind": 0,
     "react/jsx-space-before-closing": 0,
     "react/no-unescaped-entities": [2, {forbid: [">", "}"]}],
+    "react/no-unused-prop-types": 0,
     "space-before-function-paren": 0
   }
 }

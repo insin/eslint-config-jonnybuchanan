@@ -1,5 +1,7 @@
 // This file should pass linting based on the tweaks made to the standard,
 // standard-jsx and standard-react presets.
+import createReactClass from 'create-react-class'
+import t from 'prop-types'
 import React from 'react'
 
 // Allow == for typeof, which always returns a string
@@ -55,7 +57,12 @@ function *generator3() { // eslint-disable-line no-unused-vars
   yield '3'
 }
 
-let TestComponent = React.createClass({
+let TestComponent = createReactClass({
+  propTypes: {
+    // It should be ok to declare props and not use them
+    // e.g. some are needed for ownProps usage with Redux
+    id: t.string.isRequired,
+  },
   render() {
     // Multiline JSX statements don't need wrapping parens
     return <div className="test" onClick={() => { console.log('click') }}>
