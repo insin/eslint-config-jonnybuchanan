@@ -1,10 +1,13 @@
 {
   "extends": ["standard", "standard-react"],
   "parser": "babel-eslint",
+  "plugins": ["flowtype"],
   "rules": {
     "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
     "comma-dangle": [2, "only-multiline"],
     "eqeqeq": [2, "smart"],
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1,
     "generator-star-spacing": 0,
     "jsx-quotes": [2, "prefer-double"],
     "react/prop-types": 0,
