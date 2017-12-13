@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-jonnybuchanan",
   "description": "Personal eslint config, with dependencies",
-  "version": "5.0.1",
+  "version": "5.0.3",
   "license": "MIT",
   "author": "Jonny Buchanan <jonathan.buchanan@gmail.com>",
   "bin": {
