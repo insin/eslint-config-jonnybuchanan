@@ -5,14 +5,18 @@
     "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
     "comma-dangle": [2, "only-multiline"],
     "eqeqeq": [2, "smart"],
+    "indent": ["error", 2, {
+       "MemberExpression": "off"
+    }],
     "generator-star-spacing": 0,
     "jsx-quotes": [2, "prefer-double"],
-    "react/prop-types": 0,
-    "react/self-closing-comp": 0,
     "react/jsx-no-bind": 0,
     "react/jsx-space-before-closing": 0,
+    "react/jsx-tag-spacing": 0,
     "react/no-unescaped-entities": [2, {forbid: [">", "}"]}],
     "react/no-unused-prop-types": 0,
+    "react/prop-types": 0,
+    "react/self-closing-comp": 0,
     "space-before-function-paren": 0
   }
 }

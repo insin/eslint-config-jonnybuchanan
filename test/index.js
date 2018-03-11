@@ -37,6 +37,11 @@ let array = [
 ]
 console.log(object, array)
 
+// Indentation isn't enforced on member expressions
+object.a
+      .b
+      .c()
+
 let OtherComponent = () => <h2>Test</h2>
 
 // The babel-eslint parser is used to support use of async/await
