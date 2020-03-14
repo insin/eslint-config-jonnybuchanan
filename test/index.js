@@ -3,6 +3,7 @@
 import createReactClass from 'create-react-class'
 import t from 'prop-types'
 import React from 'react'
+import {Route} from 'react-router'
 
 // Allow == for typeof, which always returns a string
 // Require Stroustrup brace style - else/catch etc. on a new line
@@ -21,13 +22,21 @@ function space () {
   return 'space!'
 }
 function noSpace() {
-  return 'no space!'
+  // Use backticks for strings if you want
+  return `no space!`
 }
 
+// void can be used to force a function expression insted of paren wrapping
+void function() {
+  console.log('IIFE')
+}()
+
+// It's ok to use let for variables which aren't re-assigned
 // Dangling commas are allowed on multiline literals
 let object = {
   a: 1,
-  b: 2,
+  // You can quote props whenever you like
+  'b': 2,
   c: 3,
 }
 let array = [
@@ -36,6 +45,10 @@ let array = [
   3,
 ]
 console.log(object, array)
+
+// Use square bracket notation instead of dot notation when you like
+let b = object['b']
+console.log(b)
 
 // Indentation isn't enforced on member expressions
 object.a
@@ -46,6 +59,7 @@ let OtherComponent = () => <h2>Test</h2>
 
 // The babel-eslint parser is used to support use of async/await
 async function fetchStories(subreddit) { // eslint-disable-line no-unused-vars
+  // Object literals don't have to have spaces inside their braces
   var req = await window.fetch(`https://www.reddit.com/r/${subreddit}.json`, {mode: 'cors'})
   var json = await req.json()
   return json
@@ -70,6 +84,7 @@ let TestComponent = createReactClass({
   },
   render() {
     // Multiline JSX statements don't need wrapping parens
+    // Indentation of closing tag isn't enforced as it prevents return <tag>\n
     return <div className="test" onClick={() => { console.log('click') }}>
       {/* Declaration of propTypes is not enforced */}
       <h1>Test {this.props.name}</h1>
@@ -80,6 +95,18 @@ let TestComponent = createReactClass({
       <OtherComponent test/>
       <OtherComponent test />
       Unescaped "quotes" 'are' allowed {/* but unescaped > and } aren't */}
+      <Route
+        path="child1"
+        getComponent={
+          (nextState, cb) => {
+            require.ensure([], (require) => {
+              cb(null, require('./child1/Child1').default)
+            })
+            // Attribute indentation isn't enforced, so lining up the closing
+            // brace below with the start of the function expression is ok
+          }
+        }
+      />
     </div>
   }
 })

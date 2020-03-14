@@ -4,12 +4,20 @@
   "rules": {
     "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
     "comma-dangle": [2, "only-multiline"],
+    "dot-notation": 0,
     "eqeqeq": [2, "smart"],
     "indent": ["error", 2, {
        "MemberExpression": "off"
     }],
     "generator-star-spacing": 0,
     "jsx-quotes": [2, "prefer-double"],
+    "no-void": 0,
+    "object-curly-spacing": 0,
+    "prefer-const": 0,
+    "quote-props": 0,
+    "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "react/jsx-closing-tag-location": 0,
+    "react/jsx-indent": ["error", 2],
     "react/jsx-no-bind": 0,
     "react/jsx-space-before-closing": 0,
     "react/jsx-tag-spacing": 0,
@@ -17,6 +25,7 @@
     "react/no-unused-prop-types": 0,
     "react/prop-types": 0,
     "react/self-closing-comp": 0,
-    "space-before-function-paren": 0
+    "space-before-function-paren": 0,
+    "wrap-iife": 0
   }
 }

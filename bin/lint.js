@@ -6,9 +6,9 @@ var path = require('path')
 
 // Find eslint .bin script
 var options = [
-  // Global install or npm@2 local install, dependencies in local node_modules
+  // Global install, dependencies in local node_modules
   path.join(__dirname, '../node_modules/.bin/eslint'),
-  // Local npm@3 install, .bin and dependencies are siblings
+  // Local install, .bin and dependencies are siblings
   path.join(__dirname, '../../.bin/eslint')
 ]
 
